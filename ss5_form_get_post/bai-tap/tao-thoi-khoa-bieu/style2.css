@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+}
+td{
+    text-align: left;
+}
+th{
+    background-color: yellow;
+}
+table{
+    margin-top: 32px;
+
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+}
+form{
+    color: #2b4fff;
+    text-align: left;
+    margin-top: 40px;
+
+}

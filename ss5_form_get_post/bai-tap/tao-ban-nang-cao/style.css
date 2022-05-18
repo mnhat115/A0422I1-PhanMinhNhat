@@ -1,0 +1,22 @@
+table{
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 24px;
+}
+td{
+    padding: 70px;
+}
+label{
+    font-size: 46px;
+    line-height: 135px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+.num {
+    text-align: center;
+    padding: 50px;
+    font-size: 40px;
+}
+body{
+    background-color: #d89234;
+}

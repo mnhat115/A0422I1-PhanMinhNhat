@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+td{
+    text-align: left;
+}
+th{
+    background-color: yellow;
+}
+table{
+    margin-left: 400px;
+    border: 1px solid black;
+    width: 50%;
+    border-collapse: collapse;
+}

@@ -20,14 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8acbf26-9872-4d63-990e-c84fadf6ea97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bai1/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai1/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai1/.idea/thuc-hanh.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai1/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai1/hien-thi-ket-qua-ham-console.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai1/hien-thi-ket-qua.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai1/su-dung-ham-alert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/thuc-hanh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-mouseover-out.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-onclick.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +53,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Bai2" />
   </component>
@@ -71,6 +72,8 @@
       <option name="presentableId" value="Default" />
       <updated>1652424758689</updated>
       <workItem from="1652424759870" duration="356000" />
+      <workItem from="1652426540049" duration="508000" />
+      <workItem from="1652439070930" duration="46000" />
     </task>
     <servers />
   </component>
@@ -87,14 +90,19 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="933" y="166" key="FileChooserDialogImpl" timestamp="1652425117770">
+    <state x="933" y="166" key="FileChooserDialogImpl" timestamp="1652439116124">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="933" y="166" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1652425117770" />
+    <state x="933" y="166" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1652439116124" />
+    <state x="815" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1652426967196">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="815" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1652426967196" />
   </component>
 </project>

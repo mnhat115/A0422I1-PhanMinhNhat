@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính điểm</title>
+</head>
+<body>
+    <script>
+
+        let diemLy = prompt("Nhập điểm Lý");
+        let diemHoa = prompt("Nhập điểm Hoá");
+        let diemSinh = prompt("Nhập điểm Sinh");
+
+        let ly = parseInt(diemLy);
+        let hoa = parseInt(diemHoa);
+        let sinh = parseInt(diemSinh);
+
+        let dTB = (ly+hoa+sinh)/3;
+        document.write("Điểm trung bình: " +dTB);
+
+        let tongDiem = ly+hoa+sinh;
+        document.write("Tổng điểm 3 môn:" +tongDiem);
+    </script>
+</body>
+</html>

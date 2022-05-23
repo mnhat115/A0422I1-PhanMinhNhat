@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+</head>
+<body>
+    <form>
+        <h1>Caculator</h1>
+        <input  id="num1" type="text" value="">
+        <input  id="num2" type="text" value="">
+        <br>
+        <br>
+        <input type="button" onclick="add()" value="Addition(+)">
+        <input type="button" onclick="subtrac()" value="Subtraction(-)">
+        <input type="button" onclick="multiplica()" value="Multiplication(X)">
+        <input type="button" onclick="divi()" value="Division(/)">
+        <p id="result"></p>
+    </form>
+    <script>
+        function add() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+
+            let add = parseInt(a) + parseInt(b);
+
+            document.getElementById('result').innerHTML = 'Result Addition: '+add;
+        }
+        function subtrac() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+
+            let subtrac = parseInt(a) - parseInt(b);
+
+            document.getElementById('result').innerHTML = 'Result Subtraction: '+subtrac;
+
+        }
+        function multiplica() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+
+            let multiplica = parseInt(a) * parseInt(b);
+
+            document.getElementById('result').innerHTML = 'Result Multiplication: '+multiplica;
+
+        }
+        function divi() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+
+            let divi = parseInt(a) / parseInt(b);
+
+            document.getElementById('result').innerHTML = 'Result Division: '+divi;
+
+        }
+
+    </script>
+</body>
+</html>

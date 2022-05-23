@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            padding: 30px;
+        }
+
+        table {
+            width: 20%;
+            border: 6px solid #0d0411;
+        }
+
+        td, th {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <table border="1">
+        <tr>
+            <td colspan="4">
+                <input id="result" type="text" size="30" name="display" disabled placeholder="0">
+            </td>
+        </tr>
+        <tr>
+            <td><input onclick="calculator.display.value += 1" type="button" value="1"></td>
+            <td><input onclick="numTwo()" type="button" value="2"></td>
+            <td><input onclick="numThree()" type="button" value="3"></td>
+            <td><input onclick="sum()" type="button" value="+"></td>
+        </tr>
+        <tr>
+            <td><input onclick="numFour()" type="button" value="4"></td>
+            <td><input onclick="numFive()" type="button" value="5"></td>
+            <td><input onclick="numSix()" type="button" value="6"></td>
+            <td><input onclick="subtrac()" type="button" value="-"></td>
+        </tr>
+        <tr>
+            <td><input onclick="numSeven()" type="button" value="7"></td>
+            <td><input onclick="numEight()" type="button" value="8"></td>
+            <td><input onclick="numNine()" type="button" value="9"></td>
+            <td><input onclick="multip()" type="button" value="x"></td>
+        </tr>
+        <tr>
+            <td><input onclick="clear()" type="button" value="C"></td>
+            <td><input onclick="numZero()" type="button" value="0"></td>
+            <td><input onclick="equal()" type="button" value="="></td>
+            <td><input onclick="div()" type="button" value="/"></td>
+        </tr>
+    </table>
+</form>
+<script>
+
+</script>
+</body>
+</html>

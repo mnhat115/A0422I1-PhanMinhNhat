@@ -5,7 +5,7 @@
     <title>Title</title>
     <style>
         body {
-            padding: 30px;
+            padding: 40px;
         }
 
         table {
@@ -14,46 +14,71 @@
         }
 
         td, th {
-            padding: 20px;
+            padding:10px;
+
         }
+        input{
+            color: blue;
+            font-weight: bold;
+
+        }
+
+
+
+
     </style>
 </head>
 <body>
 <form>
     <table border="1">
         <tr>
-            <td colspan="4">
-                <input id="result" type="text" size="30" name="display" disabled placeholder="0">
-            </td>
+            <th colspan="4">
+                <input id="result" size="20" name="display" disabled placeholder="0" style="color: blue">
+            </th>
         </tr>
         <tr>
-            <td><input onclick="calculator.display.value += 1" type="button" value="1"></td>
-            <td><input onclick="numTwo()" type="button" value="2"></td>
-            <td><input onclick="numThree()" type="button" value="3"></td>
-            <td><input onclick="sum()" type="button" value="+"></td>
+            <td><input onclick='setNum(this.value)' type="button" value="1"></td>
+            <td><input onclick='setNum(this.value)' type="button" value="2"></td>
+            <td><input onclick='setNum(this.value)' type="button" value="3"></td>
+            <td><input onclick='setNum(this.value)' type="button" value="+"></td>
         </tr>
         <tr>
-            <td><input onclick="numFour()" type="button" value="4"></td>
-            <td><input onclick="numFive()" type="button" value="5"></td>
-            <td><input onclick="numSix()" type="button" value="6"></td>
-            <td><input onclick="subtrac()" type="button" value="-"></td>
+            <td><input onclick='setNum(this.value)' type="button" value="4"></td>
+            <td><input onclick='setNum(this.value)' type="button" value="5"></td>
+            <td><input onclick='setNum(this.value)' type="button" value="6"></td>
+            <td><input onclick='setNum(this.value)' type="button" value="-"></td>
         </tr>
         <tr>
-            <td><input onclick="numSeven()" type="button" value="7"></td>
-            <td><input onclick="numEight()" type="button" value="8"></td>
-            <td><input onclick="numNine()" type="button" value="9"></td>
-            <td><input onclick="multip()" type="button" value="x"></td>
+            <td><input onclick='setNum(this.value)' type="button" value="7"></td>
+            <td><input onclick='setNum(this.value)' type="button" value="8"></td>
+            <td><input onclick='setNum(this.value)' type="button" value="9"></td>
+            <td><input onclick='setNum(this.value)' type="button" value="*"></td>
         </tr>
         <tr>
-            <td><input onclick="clear()" type="button" value="C"></td>
-            <td><input onclick="numZero()" type="button" value="0"></td>
-            <td><input onclick="equal()" type="button" value="="></td>
-            <td><input onclick="div()" type="button" value="/"></td>
+            <td><input onclick="xoa()" type="button" value="C"></td>
+            <td><input onclick='setNum(this.value)' type="button" value="0"></td>
+            <td><input onclick="ketQua()" type="button" value="="></td>
+            <td><input onclick='setNum(this.value)' type="button" value="/"></td>
         </tr>
     </table>
 </form>
 <script>
-
+    let x ="";
+    function a(id) {
+        return document.getElementById(id);
+    }
+    function setNum(num) {
+        x+=num;
+        a("result").value = x;
+    }
+    function xoa() {
+        x = "";
+        a("result").value=x;
+    }
+    function ketQua() {
+        a("result").value=eval(a("result").value);
+        x =  a("result").value;
+    }
 </script>
 </body>
 </html>

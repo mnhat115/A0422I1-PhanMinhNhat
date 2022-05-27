@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Nhập số nguyên</label>
+<input id="inputInteger" type="text">
+<input type="button" onclick="equal()" value="In kết quả">
+<p id="result"></p>
+</body>
+<script>
+    function equal() {
+        let numInteger = parseInt(document.getElementById("inputInteger").value);
+        let result = document.getElementById("result");
+
+        if(isNaN(numInteger)){
+            result.innerHTML = "Vui lòng kiểm tra đúng định dạng";
+        }else if (numInteger >= 0) {
+            result.innerHTML = numInteger + " lớn hơn 0";
+        } else {
+                result.innerHTML = numInteger + " nhỏ hơn 0";
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <label>Nhập a</label>
+    <input id="numA" type="text">
+    <label>Nhập b</label>
+    <input id="numB" type="text">
+    <label>Nhập c</label>
+    <input id="numC" type="text">
+<br>
+<input onclick="maxNum()" type="button" value="Tìm giá trị lớn nhất" style="margin-left: 260px; margin-top: 20px">
+<p id="result"></p>
+</body>
+<script>
+
+
+    function maxNum() {
+        let a = parseInt(document.getElementById("numA").value);
+        let b = parseInt(document.getElementById("numB").value);
+        let c = parseInt(document.getElementById("numC").value);
+        let result = document.getElementById("result");
+
+        if(a < b) {
+            result.innerHTML = "Giá trị lớn nhất là: " + b;
+            if (a < c) {
+                result.innerHTML = "Giá trị lớn nhất là: " + c;
+            }
+        }else {
+                result.innerHTML = "Giá trị lớn nhất là: " + a;
+            }
+
+    }
+
+</script>
+</html>

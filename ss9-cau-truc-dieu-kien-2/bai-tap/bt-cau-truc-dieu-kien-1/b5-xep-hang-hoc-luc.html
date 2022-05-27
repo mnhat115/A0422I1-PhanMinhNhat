@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Nhập điểm kiểm tra</label>
+<input id="diemKiemTra" type="text" max="10" min="0"><br>
+<label>Nhập điểm thi giữa kì</label>
+<input id="diemGiuaKi" type="text" max="10" min="0"><br>
+<label>Nhập điểm thi cuối kì</label>
+<input id="diemCuoiKi" type="text" max="10" min="0">
+<br>
+<input onclick="xepHocLuc()" type="button" value="Xếp học lực">
+<p id="result"></p>
+</body>
+
+<script>
+    function xepHocLuc() {
+        let diemKiemTra = Number(document.getElementById("diemKiemTra").value);
+        let diemGiuaKi = Number(document.getElementById("diemGiuaKi").value);
+        let diemCuoiKi = Number(document.getElementById("diemCuoiKi").value);
+        let result = document.getElementById("result");
+
+        let dtb = (diemKiemTra + (diemGiuaKi * 2) + (diemCuoiKi * 3)) / 6;
+
+        if(isNaN(diemKiemTra) || isNaN(diemGiuaKi) || isNaN(diemCuoiKi) ){
+         result.innerHTML = "Vui lòng nhập đúng định dạng số( < 10 & số dương)"
+        }
+        else if(dtb <8){
+            result.innerHTML = "Xếp loại học lực Khá" +dtb;
+            if(dtb < 6.5){
+                result.innerHTML = "Xếp loại học lực Trung bình" +dtb;
+                if(dtb < 5){
+                    result.innerHTML = "Xếp loại học lực Yếu" +dtb;
+                }
+            }
+        }else {
+                    result.innerHTML = "Xếp loại học lực Giỏi" +dtb;
+                }
+
+
+    }
+</script>
+</html>

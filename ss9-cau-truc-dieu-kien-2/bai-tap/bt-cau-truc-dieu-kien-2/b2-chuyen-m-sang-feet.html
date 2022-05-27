@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Nhập số mét:</label><input type="text" id="soMet">
+<input type="button" value="Chuyển từ mét sang feet" onclick="chuyenFeet()">
+<p id="result"></p>
+</body>
+<script>
+    function chuyenFeet() {
+        let soMet = Number(document.getElementById("soMet").value);
+        let result = document.getElementById("result");
+
+        let soFeet = soMet * 3.2808;
+
+        if(isNaN(soMet)){
+            result.innerHTML = "Vui lòng nhập đúng định dạng số"
+        }else {
+            result.innerHTML = "Số feet là: "+soFeet;
+        }
+    }
+</script>
+</html>

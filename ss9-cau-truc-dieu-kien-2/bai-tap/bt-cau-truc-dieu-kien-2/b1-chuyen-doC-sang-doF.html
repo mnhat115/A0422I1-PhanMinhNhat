@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Nhập độ C</label><input type="text" id="doC">
+<input type="button" value="Chuyển đổi sang độ F" onclick="chuyenDoF()">
+<p id="result"></p>
+</body>
+<script>
+    function chuyenDoF() {
+        let doC = document.getElementById("doC").value;
+        let result = document.getElementById("result");
+
+        let doF = doC * 9 / 5 + 32;
+
+        if(isNaN(doC)){
+            result.innerHTML = "Vui lòng nhập đúng định dạng số"
+        }else {
+            result.innerHTML = "Độ F là: " +doF;
+        }
+    }
+</script>
+</html>

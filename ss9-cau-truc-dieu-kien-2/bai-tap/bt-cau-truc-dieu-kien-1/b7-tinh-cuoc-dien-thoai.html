@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Số phút gọi:</label><input type="text" id="soPhut">
+<label>Tiền cước trong 1 phút:</label><input type="text" id="tienCuoc">
+<input type="button" onclick="tinhTienCuoc()" value="Tính cước điện thoại">
+<p id="result"></p>
+</body>
+<script>
+    function tinhTienCuoc() {
+        let soPhut = Number(document.getElementById("soPhut").value);
+        let tienCuoc = Number(document.getElementById("tienCuoc").value);
+        let result = document.getElementById("result");
+
+        let tinhTienCuoc = soPhut * tienCuoc;
+        if (isNaN(soPhut&&tienCuoc)) {
+            result.innerHTML = "Vui lòng nhập đúng định dạng số"
+        } else {
+            result.innerHTML = "Tiền cước là: " + tinhTienCuoc;
+        }
+    }
+
+</script>
+</html>

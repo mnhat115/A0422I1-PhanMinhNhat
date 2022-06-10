@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Number = [3,4,6,8,9,10,20];
+    let max = Number[0];
+    let sum = 0;
+
+
+    for(let i = 0; i < Number.length;i++) {
+        if (Number[i] > max) {
+            max = Number[i];
+        }
+    }document.writeln("Phần tử có giá trị lớn nhất là: " + max);
+    for (const a of Number){
+        sum += a;
+    }
+    const tb = sum / Number.length;
+    document.writeln("<br/>Giá trị trung bình của các phần tử trong mảng là: "+tb);
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Kiểm tra 3 số thực (a, b, c) có phải cạnh của một tam giác!</h3>
+<label>Nhập số a:</label><input type="text" id="numA"><br>
+<label>Nhập số b:</label><input type="text" id="numB"><br>
+<label>Nhập số c:</label><input type="text" id="numC"><br>
+
+<input type="button" onclick="checkNum()" value="Kết quả" style="margin-left: 90px; margin-top: 15px">
+<p id="result"></p>
+</body>
+<script>
+    function checkNum() {
+        let a = Number(document.getElementById("numA").value);
+        let b = Number(document.getElementById("numB").value);
+        let c = Number(document.getElementById("numC").value);
+        let result = document.getElementById("result");
+        let ab = a + b;
+        let bc = b + c;
+        let ac = a + c;
+        if (isNaN(a) || isNaN(b) || isNaN(c)) {
+            result.innerHTML = "Vui lòng nhập đúng định dạng số!"
+        } else if (a > 0 && b > 0 && c > 0) {
+            result.innerHTML = "Là cạnh của tam giác"
+            if (ab > c) {
+                result.innerHTML = "Là cạnh của tam giác"
+                if (bc > a) {
+                    result.innerHTML = "Là cạnh của tam giác"
+                    if (ac > b) {
+                        result.innerHTML = "Là cạnh của tam giác"
+                    }
+                else {
+                    result.innerHTML = "Không là cạnh của tam giác"
+
+                }
+
+        
+</script>
+</html>

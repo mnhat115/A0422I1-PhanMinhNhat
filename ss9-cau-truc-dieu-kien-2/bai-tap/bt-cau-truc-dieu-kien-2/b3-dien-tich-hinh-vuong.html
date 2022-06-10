@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<label>Nhập cạnh a:</label><input type="text" id="canhA">
+<input type="button" value="Diện tích hình vuông" onclick="sHinhVuong()">
+<p id="result"></p>
+</body>
+<script>
+    function sHinhVuong() {
+        let canhA = Number(document.getElementById("canhA").value);
+        let result = document.getElementById("result");
+
+        let sHinhVuong = canhA * canhA;
+
+        if(isNaN(canhA)){
+            result.innerHTML = "Vui lòng nhập đúng định dạng số"
+        }else {
+            result.innerHTML = "Diện tích hình vuông là: "+sHinhVuong;
+        }
+    }
+</script>
+</body>
+</html>

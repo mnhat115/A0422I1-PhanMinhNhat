@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Giải phương trình bậc 1: ax+b=0</label><br>
+<label>Nhập số a:</label><input type="text" id="soA"><br>
+<label>Nhập số b:</label><input type="text" id="soB"><br>
+<input type="button" value="Kết quả" onclick="giaiPhuongTrinhBac1()">
+<p id="result"></p>
+</body>
+<script>
+    function giaiPhuongTrinhBac1() {
+        let soA = Number(document.getElementById("soA").value);
+        let soB = Number(document.getElementById("soB").value);
+        let result = document.getElementById("result");
+
+        let x = -soB / soA;
+
+        if(isNaN(soA) || isNaN(soB)){
+            result.innerHTML = "Số bạn nhập không đúng định dạng!"
+        }else {
+            result.innerHTML = "Phương trình bậc 1 có nghiệm: " +x;
+        }
+    }
+</script>
+</html>

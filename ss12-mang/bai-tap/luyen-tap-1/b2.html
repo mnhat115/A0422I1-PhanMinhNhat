@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Numbers = [5,7,9,50,40,90,100,80,6,11];
+    let max = Numbers[0];
+    let index = 0;
+
+    for(let i = 0; i < Numbers.length; i++){
+        if (Numbers[i] > max){
+            max = Numbers[i];
+            index = i;
+
+        }
+    }alert("Phần tử có giá trị lớn nhất là " + max + " vị trí của phần tử đó là "+ index);
+</script>
+</body>
+</html>

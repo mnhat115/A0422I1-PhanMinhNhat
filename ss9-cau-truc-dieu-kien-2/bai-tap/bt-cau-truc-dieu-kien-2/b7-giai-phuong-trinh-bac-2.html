@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Giải phương trình bậc 2: ax2+bx+c=0</label><br>
+<label>Nhập số a:</label><input type="text" id="soA"><br>
+<label>Nhập số b:</label><input type="text" id="soB"><br>
+<label>Nhập số c:</label><input type="text" id="soC"><br>
+<input type="button" value="Kết quả" onclick="giaiPhuongTrinhBac2()">
+<p id="result"></p>
+</body>
+<script>
+    function giaiPhuongTrinhBac2() {
+        let a = Number(document.getElementById("soA").value);
+        let b = Number(document.getElementById("soB").value);
+        let c = Number(document.getElementById("soC").value);
+        let result = document.getElementById("result");
+
+
+        if(a == 0){
+            if(b == 0){
+                if(c == 0){
+                    result.innerHTML = "Phương trình vô số nghiệm"
+                }else {
+                    result.innerHTML = "Phương trình vô nghiệm"
+                }
+            }else {
+                result.innerHTML = "Phương trình có nghiệm duy nhất: " +(-c/b);
+            }
+        }else{
+            let delta = b * b - 4 * a * c;
+
+            if(isNaN(a) || isNaN(b) || isNaN(c)){
+                result.innerHTML = "Số bạn nhập không đúng định dạng!"
+            }else if(delta < 0) {
+                result.innerHTML = "Phương trình vô nghiệm"
+            }
+            else if(delta == 0) {
+                x = -b / (2 * a);
+                result.innerHTML = "Phương trình có nghiệm kép x1 = " + "x2 = " + x;
+            }
+            else if(delta > 0){
+                x1 = (-b + Math.sqrt(delta)) / (2 * a)
+                x2 = (-b - Math.sqrt(delta)) / (2 * a)
+                result.innerHTML = "Phương trình có hai nghiệm phân biệt là x1 = " + x1 + " và x2 = " + x2;
+                    }
+
+
+    }
+    }
+</script>
+</html>

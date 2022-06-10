@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Nhập chiều dài:</label><input type="text" id="chieuDai"><br>
+<label>Nhập chiều rộng:</label><input type="text" id="chieuRong">
+<input type="button" value="Diện tích hình chữ nhật" onclick="sHinhChuNhat()">
+<p id="result"></p>
+</body>
+<script>
+    function sHinhChuNhat() {
+        let chieuDai = Number(document.getElementById("chieuDai").value);
+        let chieuRong = Number(document.getElementById("chieuRong").value);
+        let result = document.getElementById("result");
+
+        let sHinhChuNhat = chieuDai * chieuRong;
+
+        if(isNaN(chieuDai) || isNaN(chieuRong)){
+            result.innerHTML = "Vui lòng nhập đúng định dạng số"
+        }else {
+            result.innerHTML = "Diện tích hình chữ nhật là: "+sHinhChuNhat;
+        }
+    }
+</script>
+</body>
+</html>

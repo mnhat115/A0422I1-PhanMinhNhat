@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<H1>Kiểm tra số tuổi</H1><br>
+<label>Nhập số tuổi:</label><input type="text" id="age">
+<input type="button" value="Kiểm tra" onclick="checkAge()">
+<p id="result"> </p>
+</body>
+<script>
+    function checkAge() {
+        let age = Number(document.getElementById("age").value);
+
+        if(isNaN(age)){
+            result.innerHTML = "Vui lòng nhập đúng số tuổi của 1 người!"
+        }else if(age < 120 && age > 0){
+            result.innerHTML = "Đây là tuổi của một người!"
+        }else {
+            result.innerHTML = "Đây không phải số tuổi của một người (Điều kiện: Số tuổi lớn hơn 0 và nhỏ hơn 120)";
+        }
+    }
+</script>
+</html>

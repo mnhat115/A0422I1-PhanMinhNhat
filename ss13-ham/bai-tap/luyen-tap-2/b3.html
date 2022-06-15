@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinhGiaiThua() {
+        let num = 1;
+        for(let i = 1; i <= inputNum;i++){
+            num = num * i;
+        }
+        return num;
+    }
+    let inputNum = parseFloat(prompt("Nhập số nguyên cần tính: "));
+    document.write("Giai thừa của "+inputNum+" là "+tinhGiaiThua(inputNum));
+</script>
+</body>
+</html>

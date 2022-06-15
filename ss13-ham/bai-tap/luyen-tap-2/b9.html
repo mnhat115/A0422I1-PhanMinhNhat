@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function arrayCharacter(array) {
+        for (let i = 0;i < 5; i++ ){
+            let character = prompt('Nhập mảng kí tự ' + (i + 1) + ' :');
+            array.push (character);
+        }
+        return array
+    }
+    function randomCharacter() {
+        let random = prompt('Nhập kí tự bất kì: ');
+        let count = "0";
+        for (let i of array) {
+            if (i == random) {
+                count++;
+            }
+        }
+        return random;
+
+    }
+    let array = new Array();
+    document.write("Mảng kí tự nhập vào là: "+ arrayCharacter(array) + "<br>");
+    document.write("Kí tự thuộc mảng là: " +randomCharacter());
+
+</script>
+</body>
+</html>

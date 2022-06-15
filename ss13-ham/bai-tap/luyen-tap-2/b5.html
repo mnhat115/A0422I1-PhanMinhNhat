@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function minNumber(a,b,c) {
+        let max = a;
+        if(b < max){
+            max = b;
+        }
+        else if(c < max){
+            max = c;
+        }
+        return max;
+    }
+    let inputNumFirst = parseFloat(prompt("Nhập số thứ nhất: "));
+    let inputNumSecond = parseFloat(prompt("Nhập số thứ hai: "));
+    let inputNumThird  = parseFloat(prompt("Nhập số thứ ba: "));
+    alert("Số nguyên có giá trị nhỏ nhất là: "+minNumber(inputNumFirst,inputNumSecond,inputNumThird));
+</script>
+</body>
+</html>

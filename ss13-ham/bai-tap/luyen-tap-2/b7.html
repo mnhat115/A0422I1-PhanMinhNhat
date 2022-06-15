@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let inputNumA = parseInt(prompt("Nhập số thứ nhất: "));
+    // let inputNumB = parseInt(prompt("Nhập số thứ hai: "));
+    // document.writeln("Số thứ nhất: "+ inputNumA +" Số thứ hai: "+inputNumB);
+    // document.writeln("<br/>Hoán đổi chỗ 2 số nguyên đó: ");
+
+
+    function createArray(array) {
+        for (let i = 0;i < 2; i++ ){
+            let numbers = parseInt(prompt('Nhập số ' + (i + 1) + ' :'));
+            array.push (numbers);
+        }
+        return array
+    }
+    function reverse() {
+        array.reverse();
+        return array;
+    }
+    let array = new Array();
+    document.write("Hai số nguyên truyền vào: "+ createArray(array) + "<br>");
+    document.write("Đổi chỗ hai số nguyên: " + reverse(array));
+</script>
+</body>
+</html>

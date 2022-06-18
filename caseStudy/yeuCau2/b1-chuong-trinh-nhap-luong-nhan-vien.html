@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Tính lương:</label>
+<input id="inputHour" type="text" placeholder="Nhập số giờ làm việc">
+<input type="button" value="Lương ròng" onclick="tinhLuongThang()"><br>
+<p id="outputMoney"></p>
+<label>Nhập số lương ròng:</label>
+<input id="inputMoney" type="text" placeholder="Nhập số lương ròng">
+<input type="button" value="Tính thuế thu nhập" onclick="thueThuNhap()">
+<p id="outputLastMoney"></p>
+
+
+<script>
+    function tinhLuongThang() {
+        let inputHour = document.getElementById("inputHour").value;
+        let outputMoney = document.getElementById("outputMoney");
+
+        let basicSalary = inputHour * 50000;
+
+        outputMoney.innerHTML = "Số lương là: "+basicSalary +" VNĐ";
+    }
+    function thueThuNhap() {
+        let inputMoney = document.getElementById("inputMoney").value;
+        let outputLastMoney = document.getElementById("outputLastMoney");
+        let thueThuNhapNho = inputMoney * 0.05;
+        let thueThuNhapVua = inputMoney * 0.1;
+        let thueThuNhapLon = inputMoney * 0.2;
+
+        if(inputMoney < 7000000){
+            let taxLow = inputMoney - thueThuNhapNho;
+            outputLastMoney.innerHTML = "Lương đã trừ thuế (5%) là: " + taxLow+" VNĐ";
+        }else if(inputMoney >= 7000000 && inputMoney <= 15000000){
+            let taxMedium = inputMoney - thueThuNhapVua;
+            outputLastMoney.innerHTML = "Lương đã trừ thuế (10%) là: " + taxMedium+" VNĐ";
+        }else if(inputMoney >= 15000000){
+            let taxHigh = inputMoney - thueThuNhapLon;
+            outputLastMoney.innerHTML = "Lương đã trừ thuế (20%) là: " + taxHigh+" VNĐ";
+        }
+    }
+</script>
+</body>
+</html>

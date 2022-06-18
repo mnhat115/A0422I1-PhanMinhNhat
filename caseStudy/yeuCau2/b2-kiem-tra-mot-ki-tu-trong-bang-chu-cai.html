@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let inputCharacter = prompt("Nhập kí tự trong bảng chữ cái để kiểm tra!");
+    switch (inputCharacter) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        case 'A':
+        case 'E':
+        case 'I':
+        case 'O':
+        case 'U':
+            alert("Kí tự " +inputCharacter+" là nguyên âm");
+            break;
+            default:
+                alert("Kí tự "+inputCharacter+" không phải là nguyên âm")
+            break;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    a = 5
+    m = a;
+    n = a;
+    for(let i = 1;i <= a;i++){
+        for(let j = 1;j <= 2 * a - 1;j++){
+            if(j >= m && j <= n){
+                document.writeln("*");
+            }else {
+                document.writeln("&nbsp&nbsp");
+            }
+
+        }
+        m--;
+        n++;
+        document.writeln("<br/>")
+    }
+</script>
+</body>
+</html>

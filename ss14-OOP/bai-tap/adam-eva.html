@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h2>Adam</h2>
+    <p id="per1"></p>
+    <button onclick="eatApple1()">Eatting</button>
+    <h2>Eva</h2>
+    <p id="per2"></p>
+    <button onclick="eatApple2()">Eatting</button><br><br>
+    <h2 id="app"></h2>
+<script>
+    class Apple{
+        constructor(weight) {
+            this.weight = weight;
+        }
+        decrease(){
+            if(this.weight > 0 ){
+                this.weight--;
+            }
+        }
+        isEmpty(){
+            if(this.weight == 0){
+                alert("Hết táo.");
+            }
+        }
+        getWeight(){
+            return this.weight;
+        }
+    }
+    class Human{
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+        isMale(){
+            this.isMale;
+        }
+        setGender(){
+            return this.gender;
+        }
+        checkApple(){
+            if(getWeight() == 0){
+                return alert("Hết táo");
+            }
+        }
+        eat(apple){
+            if(apple.weight > 0){
+                this.weight++;
+                apple.decrease();
+            }else {
+                apple.isEmpty();
+            }
+        }
+        say(){
+        }
+        getName(){
+            return this.name;
+        }
+        setName(){
+            return this.setName();
+        }
+        getWeight(){
+            return this.weight;
+        }
+        setWeight(){
+            return this.setWeight();
+        }
+
+
+    }
+    let apple = new Apple(10);
+    let person1 = new Human("aDam", 'true', 65);
+    let person2 = new Human("eVa", 'false', 42);
+    let per1 = document.getElementById("per1");
+    let per2 = document.getElementById("per2");
+    let app = document.getElementById("app");
+    app.innerHTML = apple.getWeight();
+    per1.innerHTML = "Tên: " +person1.getName() +"<br/>"+ " Giới tính: " + person1.setGender() +"<br/>"+" Cân nặng: " + person1.getWeight();
+    per2.innerHTML = "Tên: " +person2.getName() +"<br/>"+ " Giới tính: " + person2.setGender() +"<br/>"+" Cân nặng:" + person2.getWeight();
+    function eatApple1() {
+        person1.eat(apple);
+        app.innerHTML = apple.getWeight();
+        per1.innerHTML = "Tên: " +person1.getName() +"<br/>"+ " Giới tính: " + person1.setGender() +"<br/>"+" Cân nặng: " + person1.getWeight();
+        per2.innerHTML = "Tên: " +person2.getName() +"<br/>"+ " Giới tính: " + person2.setGender() +"<br/>"+" Cân nặng:" + person2.getWeight();
+    }
+    function eatApple2() {
+        person2.eat(apple);
+        app.innerHTML = apple.getWeight();
+        per1.innerHTML = "Tên: " +person1.getName() +"<br/>"+ " Giới tính: " + person1.setGender() +"<br/>"+" Cân nặng: " + person1.getWeight();
+        per2.innerHTML = "Tên: " +person2.getName() +"<br/>"+ " Giới tính: " + person2.setGender() +"<br/>"+" Cân nặng:" + person2.getWeight();
+    }
+</script>
+</body>
+</html>
